@@ -21,8 +21,20 @@
             text-decoration: none;
             color: brown;
         }
+        nav > ul > li{
+            float: left;
+        }
         nav li:hover{
             background-color: chartreuse;
+        }
+        .dropdown{
+            display: none;
+        }
+        Nav > ul > li :hover > ul{
+            display: block;
+            position: absolute;
+            background-color: chocolate;
+            padding: 0%;
         }
     </style>
 </head>
@@ -31,8 +43,14 @@
         <ul>
             <li> <a href="form.html">Home</a> </li>
             <li> <a href="table.html">Features</a> </li>
-            <li> <a href="semantic.html">News</a> </li>
+            <li> <a href="Nav.html">News</a> </li>
+            <ul class="dropdown">
+                <li><a href="Nav.html">Option-1</a></li>
+                <li><a href="Nav.html">Option-1</a></li>
+                <li><a href="Nav.html">Option-1</a></li>
+            </ul>
             <li> <a href="Semantic1.html">About us</a> </li>
+            
         </ul>
     </nav>
     <h1>Checking my first website</h1>
